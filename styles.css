@@ -44,31 +44,18 @@ h1 {
   margin-bottom: .2em;
 }
 
-
-
-// A cor de fundo 
 .bgDarkMode {
   background-color: rgb(39, 39, 39);
 }
-
-
-// Modificações no titulo 'A família dos felinos'
 .titleDarkMode { 
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
 }
-
-/* 
-
-// Modificações nos items
-{
+.itemDarkMode {
   background-color: rgb(19, 19, 19);
   border-color: black;
 }
-
-// Modificações nos textos dos itens e cabeçalhos dos itens
-{
+.textDarkMode {
   color: rgb(230, 230, 230);
 }
-*/
