@@ -4,25 +4,15 @@
 */
 
 //seleção de componentes no HTML
-let buttonRef = document.querySelector('button');
 let bodyRef = document.querySelector('body');
 let h1Ref = document.querySelector('h1');
 let itemRef = document.querySelectorAll('.item')
 let pRef = document.querySelectorAll('p');
 let h2Ref = document.querySelectorAll('h2')
 
-mudaTextoBotao()
-
 //Monitoramento de cliques
-window.addEventListener('click', blabckMode)
-//mudar texto do botão
-function mudaTextoBotao() {
-  if (buttonRef.textContent === "Modo escuro") {
-    buttonRef.textContent = "Modo claro";
-  } else {
-    buttonRef.textContent = "Modo escuro";
-  }
-}
+const checkBoxButtonDarkModeRef = document.querySelector('#checkBoxButtonDarkMode')
+checkBoxButtonDarkModeRef.addEventListener('change', blabckMode)
 
 //Mudando todos os itens 
 function mudaItens() {
@@ -46,7 +36,6 @@ function mudaTodosH2() {
 
 //Fução para ativar modo escuro
 function blabckMode() {
-  mudaTextoBotao()
   bodyRef.classList.toggle('bgDarkMode');
   h1Ref.classList.toggle('titleDarkMode');
   mudaItens();
